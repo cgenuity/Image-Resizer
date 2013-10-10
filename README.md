@@ -4,15 +4,22 @@ Image resizer is a RESTful service with the sole purpose of resizing an image sp
 
 ## Installation
 
-Fork or download the source on a UNIX-based system and run **./app.py**. By default it will run a flask server on **http://localhost:5000/**. No other installation should be required since virtualenv was used to create an isolated environment.
+Fork or download the source on a UNIX-based system and run `./app.py`. By default it will run a flask server on `http://localhost:5000/`. No other installation should be required since virtualenv was used to create an isolated environment.
 
 ## Example Usage
 
 http://localhost:5000/resizer/url=http://i.imgur.com/9rSryrU.jpg&width=600&height=600&keep-aspect-ratio=true
 
+**Parameters:**
+
+url: *URL of the image to resize.*
+width: *Width to resize the image to.*
+height: *Height to resize the image to.*
+keep-aspect-ratio: *A value of 'true' keeps the original aspect ratio*
+
 ## Tests
 
-Tests can be run by running ./tests.py on a UNIX-based system.
+Tests can be run by running `./tests.py` on a UNIX-based system.
 
 
 ## License
@@ -20,7 +27,7 @@ Tests can be run by running ./tests.py on a UNIX-based system.
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Carlos Gomez (carlos24@gmail.com)
+Copyright (c) 2013 Carlos Gomez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -38,4 +45,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
