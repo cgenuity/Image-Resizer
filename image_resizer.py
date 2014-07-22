@@ -2,7 +2,7 @@
 
 """ Image Resizer module. """
 
-__author__ = "Carlos Gomez (carlosg24@gmail.com)"
+__author__ = "Carlos Gomez"
 
 import cStringIO
 import urllib
